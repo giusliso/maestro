@@ -4,8 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
+    "build": "ng build --deploy-url ./",
+    "build-prod": "ng build --prod --deploy-url ./ --no-aot --build-optimizer=false",
+    "test": "ng test --watch false --code-coverage",
     "e2e": "ng e2e",
     "inst": "npm install",
     "lint": "ng lint",
