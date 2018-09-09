@@ -1,3 +1,9 @@
 <p>
   test-component works!
 </p>
+<button (click)="addTarget()">Add</button>
+<button (click)="updateTarget()">Update</button>
+<button (click)="removeTarget()">Remove</button>
+<li *ngFor="let article of allTargets$ | async">
+    {{article.id}} - {{article.name}}
+</li>

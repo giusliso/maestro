@@ -4,7 +4,11 @@ import { TestComponent } from './test-component/test-feature.component';
 import { SharedModule } from '../../SharedModule';
 
 @NgModule({
-  imports: [CommonModule, SharedModule],
+  imports: [
+    CommonModule,
+    SharedModule
+  ],
   declarations: [TestComponent]
 })
-export class TestFeatureModule {}
+export class TestFeatureModule {
+}

@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { TestFeatureModule } from './Containers/TestFeature/test-feature.module';
 import { AppRoutingModule } from './app-routing.module';
+import { Store, select } from '@ngrx/store';
+import { RootStoreModule } from './root-store';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,4 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
   bootstrap: [AppComponent],
   exports: [RouterModule, SharedModule, TestFeatureModule, AppRoutingModule]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(store: Store<any>) {
+    store.select(s => s).subscribe(console.log.bind(console));
+  }
+}

@@ -4,7 +4,7 @@ describe('TestFeatureModule', () => {
   let testFeatureModule: TestFeatureModule;
 
   beforeEach(() => {
-    testFeatureModule = new TestFeatureModule();
+   // testFeatureModule = new TestFeatureModule();
   });
 
   it('should create an instance', () => {
