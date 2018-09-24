@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RootStoreModule } from '../root-store';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatCardModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule} from '@angular/material';
 @NgModule({
   imports: [
     CommonModule,
@@ -10,7 +10,10 @@ import {MatButtonModule, MatCheckboxModule, MatCardModule} from '@angular/materi
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   declarations: [],
   exports:[
@@ -18,7 +21,13 @@ import {MatButtonModule, MatCheckboxModule, MatCardModule} from '@angular/materi
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatCardModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule
   ]
 })
 export class SharedModule {}

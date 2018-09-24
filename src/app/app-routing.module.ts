@@ -1,15 +1,20 @@
 import { Routes, RouterModule } from '@angular/router';
 import { TestComponent } from './Containers/TestFeature';
 import { NgModule } from '@angular/core';
+import { MasterContainerComponent } from './containers/master-container/master-container.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'testarea',
+    redirectTo: 'master',
     pathMatch: 'full'
   },
   {
     path: 'testarea',
     component: TestComponent
+  },
+  {
+    path: 'master',
+    component: MasterContainerComponent
   }
   /*
   {
