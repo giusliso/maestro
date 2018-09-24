@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { TestComponent } from './Containers/TestFeature';
+import { TestComponent } from './containers/TestFeature';
 import { NgModule } from '@angular/core';
 import { MasterContainerComponent } from './containers/master-container/master-container.component';
 const routes: Routes = [

@@ -4,7 +4,7 @@ import {
     MemoizedSelector
   } from '@ngrx/store';
   
-  import { Target } from '../../Models';
+  import { Target } from '../../models';
   
   import { State } from './state';
 import { Dictionary } from '@ngrx/entity';

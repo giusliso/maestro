@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Target } from '../../../Models';
+import { Target } from '../../../models';
 import { Dictionary } from '@ngrx/entity';
 import {
   RootStoreState,

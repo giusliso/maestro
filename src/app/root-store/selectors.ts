@@ -1,6 +1,6 @@
 import { createSelector, MemoizedSelector } from '@ngrx/store';
 import { TargetStoreSelectors } from './target-store';
-import { Target } from '../Models';
+import { Target } from '../models';
 
 
 export const selectCurrentID: MemoizedSelector<object, number> = createSelector(
