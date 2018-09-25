@@ -1,0 +1,10 @@
+<div
+    class="resizable-panel"
+    mwlResizable
+    [enableGhostResize]="true"
+    [resizeEdges]="resizeEdges"
+    (resizeEnd)="onResizeEnd($event)"
+    [ngStyle]="style"
+    #panel>
+        <ng-content></ng-content>
+</div>

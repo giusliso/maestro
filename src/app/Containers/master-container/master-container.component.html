@@ -6,3 +6,16 @@
       <app-menu></app-menu>
     </mat-toolbar-row>
   </mat-toolbar>
+  <app-resizable-layout class="layout">
+      <app-resizable-panel class="organizer" [resizeRight]="true">
+          <app-organizer class ="organizer"></app-organizer>
+      </app-resizable-panel>
+
+      <app-resizable-panel class="locator" [resizeLeft]="true" [resizeRight]="true">
+          <app-work-pane class = "work-pane"></app-work-pane>
+      </app-resizable-panel>
+
+      <app-resizable-panel class="details-pane" [resizeLeft]="true">
+        <app-details-pane></app-details-pane>
+      </app-resizable-panel>
+    </app-resizable-layout>
